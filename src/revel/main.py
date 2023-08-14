@@ -6,4 +6,4 @@ import scipy.stats as stats
 def Estimate(data):
     print("------------------------------")
     # business logic
-    return "13 0 0 000 Ft"
+    return data

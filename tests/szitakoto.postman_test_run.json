@@ -1,0 +1,132 @@
+{
+	"id": "8c2627fe-0134-4c85-8d6c-a1322096bcad",
+	"name": "szitakoto",
+	"timestamp": "2023-08-13T13:30:47.578Z",
+	"collection_id": "28149926-8f1716ca-6bf2-423e-8fc1-f19a67518a34",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-08-13T13:30:46.463Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9db96785-ed55-4836-a961-5b0bd1cc1100",
+			"name": "estimate",
+			"url": "localhost:5000/estimate",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"The response should have the required field - value": true,
+				"Value is a non-negative number": true,
+				"Response time is in an acceptable range": true,
+				"Verify the value is within the expected range for an estimate": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The response should have the required field - value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Value is a non-negative number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is in an acceptable range": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the value is within the expected range for an estimate": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"The response should have the required field - value": true,
+					"Value is a non-negative number": true,
+					"Response time is in an acceptable range": true,
+					"Verify the value is within the expected range for an estimate": true
+				}
+			]
+		},
+		{
+			"id": "1e3377a9-d556-49de-81a8-a16e646febe0",
+			"name": "estimate2",
+			"url": "localhost:5000/estimate",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required field - value": true,
+				"Value is a non-negative integer": true,
+				"Response time is less than 500ms": true,
+				"Response value is within expected range": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required field - value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Value is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response value is within expected range": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required field - value": true,
+					"Value is a non-negative integer": true,
+					"Response time is less than 500ms": true,
+					"Response value is within expected range": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 19,
+	"collection": {
+		"requests": [
+			{
+				"id": "9db96785-ed55-4836-a961-5b0bd1cc1100",
+				"method": "POST"
+			},
+			{
+				"id": "1e3377a9-d556-49de-81a8-a16e646febe0",
+				"method": "POST"
+			}
+		]
+	}
+}
