@@ -1,7 +1,7 @@
 {
-	"id": "8c2627fe-0134-4c85-8d6c-a1322096bcad",
+	"id": "fc62b8de-42d5-4aec-a928-13343f1c794d",
 	"name": "szitakoto",
-	"timestamp": "2023-08-13T13:30:47.578Z",
+	"timestamp": "2023-08-14T20:36:10.140Z",
 	"collection_id": "28149926-8f1716ca-6bf2-423e-8fc1-f19a67518a34",
 	"folder_id": 0,
 	"environment_id": "0",
@@ -9,122 +9,122 @@
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2023-08-13T13:30:46.463Z",
+	"startedAt": "2023-08-14T20:36:09.606Z",
 	"totalFail": 0,
 	"results": [
 		{
-			"id": "9db96785-ed55-4836-a961-5b0bd1cc1100",
-			"name": "estimate",
-			"url": "localhost:5000/estimate",
-			"time": 13,
+			"id": "6cb7c244-a54d-4813-b7ff-61e6cce77f25",
+			"name": "estimate Azure",
+			"url": "https://szitakoto.azurewebsites.net//estimate",
+			"time": 32,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"The response should have the required field - value": true,
-				"Value is a non-negative number": true,
-				"Response time is in an acceptable range": true,
-				"Verify the value is within the expected range for an estimate": true
+				"area_size should be a non-empty string": true,
+				"building_material is a non-empty string": true,
+				"City district should be a non-empty string": true,
+				"condition_of_real_estate is a non-empty string": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
 				},
-				"The response should have the required field - value": {
+				"area_size should be a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Value is a non-negative number": {
+				"building_material is a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response time is in an acceptable range": {
+				"City district should be a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Verify the value is within the expected range for an estimate": {
+				"condition_of_real_estate is a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				}
 			},
 			"times": [
-				13
+				32
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"The response should have the required field - value": true,
-					"Value is a non-negative number": true,
-					"Response time is in an acceptable range": true,
-					"Verify the value is within the expected range for an estimate": true
+					"area_size should be a non-empty string": true,
+					"building_material is a non-empty string": true,
+					"City district should be a non-empty string": true,
+					"condition_of_real_estate is a non-empty string": true
 				}
 			]
 		},
 		{
-			"id": "1e3377a9-d556-49de-81a8-a16e646febe0",
-			"name": "estimate2",
-			"url": "localhost:5000/estimate",
-			"time": 6,
+			"id": "59cbe1d1-ec20-48ee-862d-7d92d3f7633d",
+			"name": "estimate2 Azure",
+			"url": "https://szitakoto.azurewebsites.net//estimate",
+			"time": 32,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response has the required field - value": true,
-				"Value is a non-negative integer": true,
-				"Response time is less than 500ms": true,
-				"Response value is within expected range": true
+				"area_size should be a non-empty string": true,
+				"building_material is a non-empty string": true,
+				"City district should be a non-empty string": true,
+				"condition_of_real_estate is a non-empty string": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response has the required field - value": {
+				"area_size should be a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Value is a non-negative integer": {
+				"building_material is a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response time is less than 500ms": {
+				"City district should be a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response value is within expected range": {
+				"condition_of_real_estate is a non-empty string": {
 					"pass": 1,
 					"fail": 0
 				}
 			},
 			"times": [
-				6
+				32
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response has the required field - value": true,
-					"Value is a non-negative integer": true,
-					"Response time is less than 500ms": true,
-					"Response value is within expected range": true
+					"area_size should be a non-empty string": true,
+					"building_material is a non-empty string": true,
+					"City district should be a non-empty string": true,
+					"condition_of_real_estate is a non-empty string": true
 				}
 			]
 		}
 	],
 	"count": 1,
-	"totalTime": 19,
+	"totalTime": 64,
 	"collection": {
 		"requests": [
 			{
-				"id": "9db96785-ed55-4836-a961-5b0bd1cc1100",
+				"id": "6cb7c244-a54d-4813-b7ff-61e6cce77f25",
 				"method": "POST"
 			},
 			{
-				"id": "1e3377a9-d556-49de-81a8-a16e646febe0",
+				"id": "59cbe1d1-ec20-48ee-862d-7d92d3f7633d",
 				"method": "POST"
 			}
 		]
