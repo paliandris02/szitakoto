@@ -4,7 +4,7 @@ from flask_cors import CORS
 
 app: Flask = Flask(__name__)
 
-allowed_origins = ['http://localhost:8080', 'http://94.21.253.183:8080']
+allowed_origins = ['http://localhost:8080']
 CORS(app, resources={r"/estimate": {"origins": allowed_origins}})
 
 @app.route("/")
